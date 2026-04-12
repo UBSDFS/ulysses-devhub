@@ -57,18 +57,37 @@ section {
     margin-bottom: 0.5rem;
 }
 
-#projects {
-    text-align: center;
-}
-
-#projects article {
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin-top: 2rem;
 }
-
-#projects img {
+.project-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.project-card h3 {
+    margin-top: 1rem;
+}
+
+.project-card p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 form {
