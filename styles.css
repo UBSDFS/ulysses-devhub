@@ -48,7 +48,7 @@ section {
 #hero img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
     object-fit: cover;
     margin-bottom: 1rem;
 }
@@ -154,7 +154,8 @@ button {
 }
 
 #about h2,
-#projects h2 {
+#projects h2,
+#contact h2 {
     text-align: center;
 }
 
@@ -205,4 +206,16 @@ button {
 .tech-item p {
     margin: 0;
     font-size: 0.95rem;
+}
+
+#contact p {
+    text-align: center;
+    ;
+}
+footer  {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
 }
