@@ -219,3 +219,29 @@ footer  {
     padding: 1rem 2rem;
     margin-top: 2rem;
 }
+
+.theme-toggle {
+    text-align: center;
+    margin: 15px 0;
+}
+#featured-content{
+    text-align: center;
+}
+.featured-box {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    max-width: 400px;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .featured-box {
+    background-color: #1e1e1e;
+    border-color: #ffffff;
+}

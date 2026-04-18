@@ -10,7 +10,10 @@
     </head>
 
     <body>
-
+<div class="theme-toggle">
+    <label for="darkModeToggle">Dark Mode</label>
+    <input type="checkbox" id="darkModeToggle">
+</div>
         <!-- Header / Navigation -->
         <header>
             <nav>
@@ -61,7 +64,30 @@
                     Currently, I am developing projects in JavaScript, HTML, and CSS
                     while expanding my understanding of software design and best practices.
                 </p>
+                <h3>Skills</h3>
+<ul id="skillsList"></ul>
             </section>
+            <section id="featured-content">
+    <h2>Featured Content</h2>
+
+    <!-- University Resources -->
+    <div id="universityResources" class="featured-box">
+        <h3>University Resources</h3>
+        <p>Explore ECPI program resources:</p>
+        <a href="https://www.ecpi.edu/" target="_blank">ECPI University Home</a>
+    </div>
+
+    <!-- Personal Projects -->
+    <div id="personalProjects" class="featured-box">
+        <h3>Personal Projects</h3>
+
+        <a href="https://github.com/UBSDFS" target="_blank">
+            <img src="assets/images/IMG_pro1.png" alt="GitHub Projects" width="250">
+        </a>
+
+        <p>View my GitHub repositories and live work.</p>
+    </div>
+</section>
             <!-- Tech Stack Section -->
             <section id="tech-stack">
     <h2>Tech Stack</h2>
@@ -156,7 +182,7 @@
                         Feel free to reach out for opportunities, collaboration, or questions.
                     </p>
 
-                    <form>
+                    <form id="contactForm">
 
                         <!-- Name -->
                         <label for="name">Name</label>
@@ -175,7 +201,7 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
 
                         <!-- Submit -->
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="submitBtn">Submit</button>
 
                     </form>
                 </section>
