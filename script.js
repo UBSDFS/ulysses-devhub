@@ -53,10 +53,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-   
+
     // FORM SUBMIT INTERACTION
-  =
-    const form = document.getElementById("contactForm");
+    // Timed confirmation for contact form
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let formMessage = document.getElementById("formMessage");
+
+    if (!formMessage) {
+        formMessage = document.createElement("p");
+        formMessage.id = "formMessage";
+        contactForm.appendChild(formMessage);
+    }
+
+    formMessage.textContent = "Sending message...";
+
+    setTimeout(function() {
+        formMessage.textContent = "Message sent successfully!";
+    }, 2500);
+});
+    
+  /*  const form = document.getElementById("contactForm");
     const submitBtn = document.getElementById("submitBtn");
 
     submitBtn.addEventListener("click", function (event) {
@@ -74,4 +94,24 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
     });
 
+*/
+
+// Dynamically add a new project message to the Projects section
+const projectsSection = document.getElementById("projects");
+
+const projectMessage = document.createElement("p");
+projectMessage.textContent = "Recent Project: I am currently building a JavaScript-powered portfolio with dynamic page features.";
+projectMessage.classList.add("project-message");
+
+projectsSection.appendChild(projectMessage);
+
+
+// Select and modify existing elements
+const mainHeading = document.querySelector("h1");
+mainHeading.textContent = "Ulysses Burden | Software Developer Portfolio";
+
+const aboutSection = document.getElementById("about");
+aboutSection.style.border = "2px solid #444";
+aboutSection.style.padding = "50px";
+aboutSection.style.margin = "20px 0";
 });

@@ -245,3 +245,14 @@ body.dark-mode .featured-box {
     background-color: #1e1e1e;
     border-color: #ffffff;
 }
+
+.project-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#formMessage {
+    margin-top: 1rem;
+    font-weight: bold;
+}
